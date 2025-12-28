@@ -1,12 +1,13 @@
-# 🧍‍♂️ Multi-Person Pose Detection & Re-Identification System
+# Multi-Person Pose Detection & Re-Identification System
 
 This project explores **robust multi-human pose detection and identity tracking in video footage**, with a long-term goal of **multi-camera human position estimation**.
-
-The repository documents an **iterative engineering journey** — starting from single-person pose estimation, moving through multi-person detection challenges, and finally stabilizing on a YOLOv8-based pipeline with identity tracking.
+- single-person pose estimation
+- multi-person detection challenges
+- identity tracking.
 
 ---
 
-## 🎯 Problem Statement
+## Problem Statement
 
 Real-world video analysis systems must be able to:
 
@@ -16,17 +17,9 @@ Real-world video analysis systems must be able to:
 - Re-identify individuals after **temporary occlusion or missed detections**  
 - Operate under **real-time constraints**  
 
-This project experiments with multiple approaches to understand the trade-offs involved in solving these challenges.
-
 ---
 
-## 🧠 Project Evolution & Approach
-
-Each script in this repository represents a **distinct stage of experimentation** and learning.
-
----
-
-## 1️⃣ Single-Person Pose Detection (Baseline)
+## 1️. Single-Person Pose Detection (Baseline)
 
 ### `single_mediapipe.py`
 
@@ -44,7 +37,7 @@ Each script in this repository represents a **distinct stage of experimentation*
 
 ---
 
-## 2️⃣ Multi-Person Pose via TensorFlow / PoseNet
+## 2️. Multi-Person Pose via TensorFlow / PoseNet
 
 ### `multi_tensor.py`
 
@@ -63,7 +56,7 @@ Each script in this repository represents a **distinct stage of experimentation*
 
 ---
 
-## 3️⃣ Stable Multi-Person Pose Detection (YOLOv8)
+## 3️. Stable Multi-Person Pose Detection (YOLOv8)
 
 ### `multi_yolo_stable.py`
 
@@ -82,7 +75,7 @@ Each script in this repository represents a **distinct stage of experimentation*
 
 ---
 
-## 4️⃣ Identity Tracking & Re-Identification (WIP)
+## 4️. Identity Tracking & Re-Identification (WIP)
 
 ### `id-system.py`
 
@@ -102,30 +95,18 @@ Each script in this repository represents a **distinct stage of experimentation*
 
 ---
 
-## 🔗 System Capabilities (Current)
+## System Capabilities
 
-- ✅ Multi-person detection in video  
-- ✅ Full-body pose estimation per person  
-- ✅ Stable skeleton rendering  
-- ✅ Identity tracking across frames  
-- ⚠️ Partial re-identification after occlusion  
-- 🚧 Multi-camera stitching (future work)  
-
----
-
-## 🧩 Why This Project Is Non-Trivial
-
-- Explores **multiple pose estimation pipelines**
-- Balances **latency vs accuracy**
-- Uses **pose-based tracking**, not only bounding boxes
-- Integrates detection, pose estimation, and tracking
-- Designed with **real-time constraints** in mind
-
-This is an **engineering exploration project**, not a one-script demo.
+- Multi-person detection in video  
+- Full-body pose estimation per person  
+- Stable skeleton rendering  
+- Identity tracking across frames  
+- Partial re-identification after occlusion  
+- Multi-camera stitching (future work)  
 
 ---
 
-## 🛠️ Tech Stack
+## ech Stack
 
 - **Detection & Pose:** YOLOv8 (Ultralytics)
 - **Tracking:** DeepSORT
@@ -135,7 +116,7 @@ This is an **engineering exploration project**, not a one-script demo.
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 ├── single_mediapipe.py      # Single-person pose baseline
@@ -149,7 +130,7 @@ This is an **engineering exploration project**, not a one-script demo.
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 ### Install dependencies
 ```bash
@@ -168,7 +149,7 @@ python id-system.py
 
 ---
 
-## 🔮 Future Work
+## Future Work
 
 - Improve re-identification robustness
 - Handle long-term occlusions
@@ -178,6 +159,6 @@ python id-system.py
 
 ---
 
-## 📄 License
+## License
 
 This project is intended for **educational and experimental use**.
