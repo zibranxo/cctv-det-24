@@ -1,0 +1,20 @@
+# Python
+python>=3.8
+
+# Core Vision
+opencv-python>=4.7
+numpy>=1.21
+
+# Pose Detection
+ultralytics>=8.0.0        # YOLOv8 pose
+mediapipe>=0.10.0         # Single-person baseline
+
+# Tracking / Re-ID
+deep-sort-realtime>=1.3.2
+
+# TensorFlow (PoseNet experiment)
+tensorflow>=2.9
+tflite-runtime; platform_system != "Windows"
+
+# Utilities
+scipy>=1.7
